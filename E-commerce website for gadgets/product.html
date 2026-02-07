@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Shop | Products</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="index.html">E-Shop</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link active" href="product.html">Products</a></li>
+<li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+<li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Hero -->
+<header class="hero text-white text-center">
+<div class="container">
+<h1>Products</h1>
+<p>Browse our latest picks</p>
+</div>
+</header>
+
+<main>
+<!-- Filters -->
+<section class="container my-4">
+<div class="row g-3 align-items-end">
+<div class="col-md-4">
+<label for="search" class="form-label">Search</label>
+<input id="search" type="text" class="form-control" placeholder="Search products">
+</div>
+<div class="col-md-4">
+<label for="category" class="form-label">Category</label>
+<select id="category" class="form-select">
+<option selected>All Categories</option>
+<option>Electronics</option>
+<option>Accessories</option>
+<option>Footwear</option>
+</select>
+</div>
+<div class="col-md-4">
+<label for="sort" class="form-label">Sort By</label>
+<select id="sort" class="form-select">
+<option selected>Featured</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+</select>
+</div>
+</div>
+</section>
+
+<!-- Product Grid -->
+<section class="container my-4">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="col">
+<div class="card h-100" data-search="iphone pro smartphone oled 6.1 display triple camera 256gb 5g ios">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="iPhone Pro">
+<div class="card-body">
+<h5 class="card-title">iPhone Pro</h5>
+<p class="card-text text-primary fw-bold">$1,099</p>
+<span class="badge bg-primary mb-2">New</span>
+<a class="btn btn-outline-primary btn-sm" href="product-iphone-pro.html">View Details</a>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100" data-search="gaming laptop rtx 4070 16gb ddr5 1tb ssd 165hz">
+<img src="https://images.pexels.com/photos/32966915/pexels-photo-32966915.jpeg?cs=srgb&dl=pexels-janine-speidel-1933619854-32966915.jpg&fm=jpg" class="card-img-top" alt="Gaming laptop">
+<div class="card-body">
+<h5 class="card-title">Gaming Laptop</h5>
+<p class="card-text text-primary fw-bold">$1,699</p>
+<span class="badge bg-success mb-2">In Stock</span>
+<a class="btn btn-outline-primary btn-sm" href="product-gaming-laptop.html">View Details</a>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100" data-search="gaming monitor 27 inch 1440p 165hz ips hdr">
+<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Gaming monitor">
+<div class="card-body">
+<h5 class="card-title">Gaming Monitor</h5>
+<p class="card-text text-primary fw-bold">$349</p>
+<span class="badge bg-primary mb-2">New</span>
+<a class="btn btn-outline-primary btn-sm" href="product-gaming-monitor.html">View Details</a>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100" data-search="gaming headset 7.1 surround noise-cancel mic 30 hours">
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Gaming headset">
+<div class="card-body">
+<h5 class="card-title">Gaming Headset</h5>
+<p class="card-text text-primary fw-bold">$119</p>
+<span class="badge bg-success mb-2">In Stock</span>
+<a class="btn btn-outline-primary btn-sm" href="product-gaming-headset.html">View Details</a>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100" data-search="smart watch fitness tracker heart rate gps waterproof">
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Smart watch">
+<div class="card-body">
+<h5 class="card-title">Smart Watch</h5>
+<p class="card-text text-primary fw-bold">$199</p>
+<a class="btn btn-outline-primary btn-sm" href="product-watch.html">View Details</a>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100" data-search="digital camera lens 4k photo video">
+<img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Digital camera">
+<div class="card-body">
+<h5 class="card-title">Digital Camera</h5>
+<p class="card-text text-primary fw-bold">$450</p>
+<a class="btn btn-outline-primary btn-sm" href="product-camera.html">View Details</a>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100" data-search="sport sneakers lightweight breathable mesh running">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Sport sneakers">
+<div class="card-body">
+<h5 class="card-title">Sport Sneakers</h5>
+<p class="card-text text-primary fw-bold">$95</p>
+<a class="btn btn-outline-primary btn-sm" href="product-sneakers.html">View Details</a>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100" data-search="wireless earbuds bluetooth noise cancel charging case">
+<img src="https://unsplash.com/photos/-d-MoiV98pc/download?force=true" class="card-img-top" alt="Wireless earbuds">
+<div class="card-body">
+<h5 class="card-title">Wireless Earbuds</h5>
+<p class="card-text text-primary fw-bold">$79</p>
+<a class="btn btn-outline-primary btn-sm" href="product-earbuds.html">View Details</a>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100" data-search="neckband wireless earphones bluetooth long battery">
+<img src="https://images.pexels.com/photos/350794/pexels-photo-350794.jpeg?cs=srgb&dl=pexels-zozz-350794.jpg&fm=jpg" class="card-img-top" alt="Neckband wireless earphones">
+<div class="card-body">
+<h5 class="card-title">Neckband Wireless</h5>
+<p class="card-text text-primary fw-bold">$49</p>
+<a class="btn btn-outline-primary btn-sm" href="product-neckband.html">View Details</a>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100" data-search="smartphone oled 6.1 display triple camera 128gb 5g">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Smartphone">
+<div class="card-body">
+<h5 class="card-title">Smartphone</h5>
+<p class="card-text text-primary fw-bold">$699</p>
+<a class="btn btn-outline-primary btn-sm" href="product-smartphone.html">View Details</a>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100" data-search="ultrabook laptop i7 16gb 512gb ssd slim">
+<img src="New folder/asus-rog-zephyrus-g16-6118.webp" class="card-img-top" alt="Ultrabook laptop">
+<div class="card-body">
+<h5 class="card-title">Ultrabook Laptop</h5>
+<p class="card-text text-primary fw-bold">$1,299</p>
+<a class="btn btn-outline-primary btn-sm" href="product-ultrabook.html">View Details</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Product Details (Merged) -->
+<section class="container my-5" id="product-details">
+<h2 class="mb-4">Product Details</h2>
+
+<section class="border rounded p-4 mb-4" id="iphone-pro">
+<h3 class="fw-bold mb-3">iPhone Pro</h3>
+<h5 class="fw-semibold mb-3">Customer Reviews</h5>
+<div class="row g-3">
+  <div class="col-md-6">
+    <div class="border rounded p-3 h-100">
+      <div class="d-flex justify-content-between">
+        <strong>Maya H.</strong>
+        <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      </div>
+      <p class="text-muted mb-0">Camera is excellent and battery lasts all day.</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="border rounded p-3 h-100">
+      <div class="d-flex justify-content-between">
+        <strong>Omar T.</strong>
+        <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+      </div>
+      <p class="text-muted mb-0">Display is sharp and the phone feels premium.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="border rounded p-4" id="gaming-laptop">
+<h3 class="fw-bold mb-3">Gaming Laptop</h3>
+<h5 class="fw-semibold mb-3">Customer Reviews</h5>
+<div class="row g-3">
+  <div class="col-md-6">
+    <div class="border rounded p-3 h-100">
+      <div class="d-flex justify-content-between">
+        <strong>Ryan P.</strong>
+        <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      </div>
+      <p class="text-muted mb-0">Runs every game smoothly and stays cool.</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="border rounded p-3 h-100">
+      <div class="d-flex justify-content-between">
+        <strong>Hina S.</strong>
+        <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+      </div>
+      <p class="text-muted mb-0">Great performance, battery could be stronger.</p>
+    </div>
+  </div>
+</div>
+</section>
+</section>
+</main>
+
+<footer class="bg-dark text-white pt-5 pb-3">
+<div class="container">
+<div class="row g-4">
+<div class="col-md-4">
+<h5 class="fw-semibold">E-Shop</h5>
+<p class="text-secondary">Premium tech and lifestyle essentials delivered with care and speed.</p>
+<ul class="list-unstyled text-secondary">
+<li>Support: support@eshop.com</li>
+<li>Phone: +1 (250) 757-2808</li>
+<li>Hours: Mon-Sat, 9am-7pm</li>
+</ul>
+</div>
+<div class="col-md-2">
+<h6 class="fw-semibold">Shop</h6>
+<ul class="list-unstyled">
+<li><a class="text-secondary text-decoration-none" href="product.html">All Products</a></li>
+<li><a class="text-secondary text-decoration-none" href="product.html">Electronics</a></li>
+<li><a class="text-secondary text-decoration-none" href="product.html">Accessories</a></li>
+<li><a class="text-secondary text-decoration-none" href="product.html">New Arrivals</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<h6 class="fw-semibold">Company</h6>
+<ul class="list-unstyled">
+<li><a class="text-secondary text-decoration-none" href="index.html">Home</a></li>
+<li><a class="text-secondary text-decoration-none" href="product.html">Products</a></li>
+<li><a class="text-secondary text-decoration-none" href="cart.html">Cart</a></li>
+<li><a class="text-secondary text-decoration-none" href="login.html">Login</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<h6 class="fw-semibold">Newsletter</h6>
+<p class="text-secondary">Get deals and new arrivals in your inbox.</p>
+<form class="d-flex gap-2">
+<input type="email" class="form-control form-control-sm" placeholder="Email address" required>
+<button class="btn btn-outline-light btn-sm" type="submit">Subscribe</button>
+</form>
+<div class="d-flex gap-3 mt-3">
+<span class="text-secondary">Instagram</span>
+<span class="text-secondary">Facebook</span>
+<span class="text-secondary">X</span>
+</div>
+</div>
+</div>
+<hr class="border-secondary my-4">
+<div class="d-flex flex-column flex-md-row justify-content-between small text-secondary">
+<span> 2026 E-Shop. All rights reserved.</span>
+<div class="d-flex gap-3">
+<span>Privacy</span>
+<span>Terms</span>
+<span>Refunds</span>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body>
+</html>
+ 

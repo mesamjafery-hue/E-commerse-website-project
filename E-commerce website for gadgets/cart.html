@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="index.html">E-Shop</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+<li class="nav-item"><a class="nav-link active" href="cart.html">Cart</a></li>
+<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+<li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Cart Content -->
+<main class="container my-5">
+<div class="d-flex justify-content-between align-items-center mb-3">
+<div>
+<h2 class="mb-1">Shopping Cart</h2>
+<p class="text-muted mb-0">Review your items before checkout.</p>
+</div>
+<a class="btn btn-outline-dark btn-sm" href="product.html">Continue Shopping</a>
+</div>
+<div class="row g-4">
+<div class="col-lg-8">
+<div class="card shadow-sm">
+<div class="card-body p-0">
+<div class="table-responsive">
+<table class="table align-middle mb-0">
+<thead class="table-light">
+  <tr>
+    <th>Product</th>
+    <th class="text-center">Qty</th>
+    <th class="text-end">Price</th>
+    <th class="text-end">Total</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>
+    <div class="d-flex align-items-center gap-3">
+      <img src="https://images.pexels.com/photos/32966915/pexels-photo-32966915.jpeg?cs=srgb&dl=pexels-janine-speidel-1933619854-32966915.jpg&fm=jpg" class="rounded" alt="Ultrabook laptop" style="width: 64px; height: 64px; object-fit: cover;">
+      <div>
+        <div class="fw-semibold">Ultrabook Laptop</div>
+        <small class="text-muted">16GB RAM Â· 512GB SSD</small>
+      </div>
+    </div>
+  </td>
+  <td class="text-center">
+    <input type="number" class="form-control form-control-sm mx-auto" value="1" min="1" style="max-width: 80px;">
+  </td>
+  <td class="text-end">$1,299</td>
+  <td class="text-end fw-semibold">$1,299</td>
+</tr>
+<tr>
+  <td>
+    <div class="d-flex align-items-center gap-3">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=300&q=80" class="rounded" alt="Studio headphones" style="width: 64px; height: 64px; object-fit: cover;">
+      <div>
+        <div class="fw-semibold">Studio Headphones</div>
+        <small class="text-muted">Overâ€‘ear Â· ANC</small>
+      </div>
+    </div>
+  </td>
+  <td class="text-center">
+    <input type="number" class="form-control form-control-sm mx-auto" value="2" min="1" style="max-width: 80px;">
+  </td>
+  <td class="text-end">$120</td>
+  <td class="text-end fw-semibold">$240</td>
+</tr>
+<tr>
+  <td>
+    <div class="d-flex align-items-center gap-3">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=300&q=80" class="rounded" alt="Sport sneakers" style="width: 64px; height: 64px; object-fit: cover;">
+      <div>
+        <div class="fw-semibold">Sport Sneakers</div>
+        <small class="text-muted">Size 10 Â· Black</small>
+      </div>
+    </div>
+  </td>
+  <td class="text-center">
+    <input type="number" class="form-control form-control-sm mx-auto" value="1" min="1" style="max-width: 80px;">
+  </td>
+  <td class="text-end">$95</td>
+  <td class="text-end fw-semibold">$95</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="card shadow-sm mb-4">
+<div class="card-body">
+<h5 class="card-title">Order Summary</h5>
+<div class="d-flex justify-content-between text-muted mb-2">
+  <span>Subtotal</span><span>$1,634</span>
+</div>
+<div class="d-flex justify-content-between text-muted mb-2">
+  <span>Shipping</span><span>Free</span>
+</div>
+<div class="d-flex justify-content-between text-muted mb-3">
+  <span>Tax</span><span>$0</span>
+</div>
+<hr>
+<div class="d-flex justify-content-between fw-semibold mb-3">
+  <span>Total</span><span>$1,634</span>
+</div>
+<div class="mb-3">
+  <label for="coupon" class="form-label">Coupon Code</label>
+  <div class="input-group">
+    <input id="coupon" type="text" class="form-control" placeholder="SAVE10">
+    <button class="btn btn-outline-secondary" type="button">Apply</button>
+  </div>
+</div>
+<button class="btn btn-primary w-100 btn-lg">Proceed to Checkout</button>
+</div>
+</div>
+<div class="card border-0 bg-light">
+<div class="card-body">
+<h6 class="fw-semibold">Secure Checkout</h6>
+<p class="text-muted mb-0">Payments are encrypted and protected.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<footer class="bg-dark text-white pt-5 pb-3">
+<div class="container">
+<div class="row g-4">
+<div class="col-md-4">
+<h5 class="fw-semibold">E-Shop</h5>
+<p class="text-secondary">Premium tech and lifestyle essentials delivered with care and speed.</p>
+<ul class="list-unstyled text-secondary">
+<li>Support: support@eshop.com</li>
+<li>Phone: +1 (555) 013-2026</li>
+<li>Hours: Mon–Sat, 9am–7pm</li>
+</ul>
+</div>
+<div class="col-md-2">
+<h6 class="fw-semibold">Shop</h6>
+<ul class="list-unstyled">
+<li><a class="text-secondary text-decoration-none" href="product.html">All Products</a></li>
+<li><a class="text-secondary text-decoration-none" href="product.html">Electronics</a></li>
+<li><a class="text-secondary text-decoration-none" href="product.html">Accessories</a></li>
+<li><a class="text-secondary text-decoration-none" href="product.html">New Arrivals</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<h6 class="fw-semibold">Company</h6>
+<ul class="list-unstyled">
+<li><a class="text-secondary text-decoration-none" href="index.html">Home</a></li>
+<li><a class="text-secondary text-decoration-none" href="product.html">Products</a></li>
+<li><a class="text-secondary text-decoration-none" href="cart.html">Cart</a></li>
+<li><a class="text-secondary text-decoration-none" href="login.html">Login</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<h6 class="fw-semibold">Newsletter</h6>
+<p class="text-secondary">Get deals and new arrivals in your inbox.</p>
+<form class="d-flex gap-2">
+<input type="email" class="form-control form-control-sm" placeholder="Email address" required>
+<button class="btn btn-outline-light btn-sm" type="submit">Subscribe</button>
+</form>
+<div class="d-flex gap-3 mt-3">
+<span class="text-secondary">Instagram</span>
+<span class="text-secondary">Facebook</span>
+<span class="text-secondary">X</span>
+</div>
+</div>
+</div>
+<hr class="border-secondary my-4">
+<div class="d-flex flex-column flex-md-row justify-content-between small text-secondary">
+<span>© 2026 E-Shop. All rights reserved.</span>
+<div class="d-flex gap-3">
+<span>Privacy</span>
+<span>Terms</span>
+<span>Refunds</span>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

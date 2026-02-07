@@ -1,0 +1,14 @@
+body { font-family: "Segoe UI", Arial, sans-serif; }
+.hero {
+background: linear-gradient(rgba(13, 110, 253, 0.75), rgba(102, 16, 242, 0.75)), url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");
+background-size: cover;
+background-position: center;
+padding: 100px 0;
+}
+.hero h1, .hero p { text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35); }
+
+main section { margin-bottom: 2rem; }
+.card img { object-fit: cover; }
+.card-title { min-height: 2rem; }
+.badge { font-weight: 600; }
+.table th, .table td { vertical-align: middle; }
