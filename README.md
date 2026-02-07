@@ -33,8 +33,3 @@ A multi-page, responsive e-commerce website for gadgets built with HTML, CSS, an
 2. Optional: run a simple local server to avoid browser file restrictions.
    - Example (PowerShell): `python -m http.server`
    - Then visit `http://localhost:8000`
-
-## Customize
-- Update styles in `style.css`
-- Swap images by replacing `8743024fa6c2a7a62f8a2d85ca0d4b46.jpg` or updating references in HTML files
-- Add products by duplicating a `product-*.html` page and linking it from `product.html`
